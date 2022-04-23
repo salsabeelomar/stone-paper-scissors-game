@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(230, 212, 238);
+}
+.Scorebar {
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(66, 66, 129);
+  font-size: 25px;
+}
+
+.playArea{
+    display: flex;  
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.player{
+    border: 5px rgb(66, 66, 129) solid; 
+    width: 200px;
+    height:200px;
+}
+ul {
+       margin-left:38%; 
+}
+
+ul li {
+    display: inline;
+    text-align: center;
+    padding: 15px;
+ 
+
+} 
+main h1{ 
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+    color: #607d8b;
+}
+#play{
+    margin-left: 45%;
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: rgb(66, 66, 129);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(230, 212, 238);
+
+}
