@@ -39,8 +39,9 @@ main h1{
     margin: 15px;
     color: #607d8b;
 }
-#play{
+#play , #reset{
     margin-left: 45%;
+    margin-top: 10px;
     width: 90px;
     height: 30px;
     border: none;

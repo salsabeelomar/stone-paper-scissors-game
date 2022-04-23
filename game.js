@@ -8,6 +8,7 @@ const start = document.getElementById("play");
 const goodLuck = document.getElementById("goodLuck");
 const comScore = document.getElementById("computerScore");
 const youScore = document.getElementById("youScore");
+const  reset =document.getElementById("reset")
 const imagesObj = {
   rock: `<img class="corock"src="assert/rock.jpg" width="50" height="50" />`,
   paper: `  <img class="copaper" src="assert/paper.jpg" width="50" height="50" />`,
@@ -37,7 +38,9 @@ yspan.innerHTML = ys;
 youScore.appendChild(yspan);
 
 //// methods call
+
 start.addEventListener("click",()=>{
+  goodLuck.textContent = "Ready !! ";
 userPaper.addEventListener("click", () => {
   Computerchoose.textContent = "";
   userChooser.innerHTML = imagesObj.paper;
@@ -53,6 +56,16 @@ userScissors.addEventListener("click", () => {
   userChooser.innerHTML = imagesObj.scissor;
  play("scissor", AddComputerChoosen())
 });
+})
+reset.addEventListener("click",()=>{
+  goodLuck.textContent="Try You luck !"
+  Computerchoose.textContent = "";
+  userChooser.textContent =""
+  ys = 0;
+  cs = 0;
+  cspan.innerHTML = cs;
+  yspan.innerHTML = ys;
+
 })
 //// functions area
 
